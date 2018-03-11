@@ -245,7 +245,7 @@ sudo chef-server-ctl org-create $${CHEF_DEMO_ORG} 'Demo Organization' --associat
 # for info about content-type
 aws s3 cp /tmp/$${CHEF_ADMIN_PEM} s3://$${S3_BUCKET}/$${CHEF_ADMIN_PEM} --content-type 'text/*'
 
-# Install Chef Manage and reconfgigure/restart services
+# Install Chef Manage and reconfigure/restart services
 sudo chef-server-ctl install chef-manage
 sudo chef-server-ctl reconfigure
 sudo chef-manage-ctl reconfigure --accept-license
