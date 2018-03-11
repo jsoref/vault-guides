@@ -4,7 +4,7 @@ containers = %w(
   consul-client0
 )
 
-# Check on existance of containers
+# Check on existence of containers
 containers.each do |container_name|
   describe docker_container(container_name) do
     it { should exist }
